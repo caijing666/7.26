@@ -1,0 +1,38 @@
+1.不用有参的
+package test1;
+public class Person {
+public static int age;
+public static String name;
+public void display() {
+   System.out.println("年龄："+age+"姓名："+name);
+   }
+public static void main(String[] args) {
+   Person person=new Person();
+   Person.name =" caijing";
+   Person.age = 22;
+   person.display();
+    }
+}
+
+2.使用有参的
+package test1;
+
+public class Person {
+public static int age;
+public static String name;
+public Person(int age, String name) {
+	super();
+	this.age = age;
+	this.name = name;
+   }
+public Person() {
+
+   }
+public void display() {
+	System.out.println("年龄："+age+"姓名："+name);
+   }
+public static void main(String[] args) {
+Person person=new Person(22,"caijing");
+person.display();
+    }
+}

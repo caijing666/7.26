@@ -1,0 +1,30 @@
+1. 在circle类里面代码
+package test1;
+
+public class Circle {
+public  double r;
+
+public Circle(double r) {
+	super();
+	this.r = r;
+}
+public void getArea() {
+	System.out.println("周长："+Math.PI*r*r);
+}
+public void getPerimeter() {
+	System.out.println("面积："+2*Math.PI*r);
+}
+
+}
+
+2. 在test测试类里代码
+package test1;
+
+public class test {
+	public static void main(String[] args) {
+
+		Circle circle=new Circle(3.6);
+		circle.getArea();
+		circle.getPerimeter();
+	}
+}
